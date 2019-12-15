@@ -1,92 +1,137 @@
-<!-- hypertext markup language -->
-<!DOCTYPE html>
-<html lang="en">
-<!-- START HEAD ELEMENT -->
-	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Josue Rivera">
-		<meta name="description" content="">
-				<!-- adapts webpage to screen/browser size changes -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title><!-- insert title here --></title>
-
-		<!-- insert boilerplate code  and links below -->
-
-		<!-- link to FontAwesome for icons and such -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-
-		<!-- link to css reset -->
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-
-		<!-- link to animate css file -->
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
-
-		<!-- link to bootstrap CDN files -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-	<!-- link to my css stylesheet; KEEP AT BOTTOM -- STRONGEST IN CASCADE -->
-		<link rel="stylesheet" href="css/main.css">
-	<!-- end head element -->
-	</head>
-<!-- START BODY ELEMENT -->
-	<body>
-
-
-
-		<div id="container">
-			<h1>Sway's ToDo List<i class="fa fa-plus"></i></h1>
-			<input type="text" name="" id="" placeholder="Add New To Do">	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		
-			<ul>
-				<li><span><i class="fa fa-trash"></i></span>Wake Up</li>
-				<li><span><i class="fa fa-trash"></i></span>Take a Shower</li>
-				<li><span><i class="fa fa-trash"></i></span>Hit KMEL up for the next 4 hours</li>
-				<li><span><i class="fa fa-trash"></i></span>...rest of it</li>
-			</ul>		
-		
-			
-			</div>
+		<title>Roast Sway</title>
 
-<!-- NAVIGATION BAR - GOOD TO GO -->
- <!-- class="w-100 position-fixed fixed-top overflow-hidde m-0" --> 
- <div>
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-	<a class="navbar-brand text-warning" href="#">R<i class="fas fa-fire-alt"></i>AST</a>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>		
+	<!-- link to css reset -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Projects
+	<!-- link to animate css file -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+
+	<!-- link to bootstrap CDN files -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- custom CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+<!-- NAVIGATION BAR - GOOD TO GO -- needs to be linked-->
+	<header class="main-header">
+		<div>
+			<button class="toggle-button">
+				<span class="toggle-button__bar"></span>
+				<span class="toggle-button__bar"></span>
+				<span class="toggle-button__bar"></span>
+			</button>
+			<a href="index.html" class="main-header__brand">
+					R <i class="fas fa-fire"></i> A S T
 			</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">ZODIAC</a>
-					<a class="dropdown-item" href="#">FAITHFUL QUIZ</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">PROJECT HOME</a>
-				</div>
+		</div>
+		<nav class="main-nav">
+			<ul class="main-nav__items">
+				<li class="main-nav__item">
+					<a href="#">MY PROJECTS</a>
+				</li>
+				<li class="main-nav__item">
+					<a href="#"> ABOUT ROAST</a>
+				</li>
+				<li class="main-nav__item main-nav__item--cta">
+					<a href="#">SHARE</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<nav class="mobile-nav">
+		<ul class="mobile-nav__items">
+			<li class="mobile-nav__item">
+				<a href="packages/index.html">MY PROJECTS</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Report Content</a>
+			<li class="mobile-nav__item">
+				<a href="customers/index.html">ABOUT ROAST</a>
+			</li>
+			<li class="mobile-nav__item mobile-nav__item--cta">
+				<a href="hosting/index.html">SHARE</a>
 			</li>
 		</ul>
-	</div>
 	</nav>
-</div>
 
-<!-- LEFTOVER CODE -->
+
+
+<!-- TO DO APP HTML	-- TO BE USE IN COMMENTS SECTION -->
+	<!-- <div id="container">
+		<h1>Sway's ToDo List<i class="fa fa-plus"></i></h1>
+		<input type="text" name="" id="" placeholder="Add New To Do">	
+	
+		<ul>
+			<li><span><i class="fa fa-trash"></i></span>Wake Up</li>
+			<li><span><i class="fa fa-trash"></i></span>Take a Shower</li>
+			<li><span><i class="fa fa-trash"></i></span>Hit KMEL up for the next 4 hours</li>
+			<li><span><i class="fa fa-trash"></i></span>...rest of it</li>
+		</ul>		
+	</div> -->
+	
+	
+
+<!-- OLD NAVIGATION BAR - NOT NEEDED ANYMORE -->
+	<!-- class="w-100 position-fixed fixed-top overflow-hidde m-0" --> 
+	<!-- <div>
+		<nav class="navbar navbar-expand-sm bg-dark">
+		<a class="navbar-brand text-warning" href="#">R
+				<i class="fas fa-fire"></i>
+				<i class="fas fa-fire-alt"></i>
+				A S T</a> -->
+
+		<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>		 -->
+
+		<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Roast Me</a>
+				</li> -->
+				<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				My Projects
+				</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">ZODIAC</a>
+						<a class="dropdown-item" href="#">FAITHFUL QUIZ</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">PROJECT HOME</a>
+					</div>
+				</li> -->
+				<!-- <li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Report Content</a>
+				</li>
+			</ul>
+		</div>
+		</nav>
+	</div> -->
+
+
+
+
+
+
+
+<!-- LEFTOVER CODE -- CAN PROBABLY DELETE -->
 	<!-- <form class="form-inline my-2 my-lg-0">
 	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 	<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
@@ -127,131 +172,154 @@
 	</nav>
 	</div>	 -->
 
-<!-- IMAGE CAROSEL -->
-	<!-- <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active" data-interval="2000">
-				<img src="img/photos/1.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item" data-interval="2000">
-				<img src="img/photos/2.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div  class="carousel-item" data-interval="2000">
-				<img src="img/photos/3.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item" data-interval="2000">
-				<img src="img/photos/4.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item" data-interval="2000">
-				<img src="img/photos/5.jpg" class="d-block w-100" alt="...">
-			</div>
-		</div>
-			
-			<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-
-			<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-	</div> -->
-
-<!-- RAMBL HTML C -->
-<!-- 	<div>	
-<nav class="animated bounceIn">
+<!-- RAMBL HTML C -- FOR REFERENCE BUT PROB DELETE -->
+	<!-- 	<div>	
+	<nav class="animated bounceIn">
 	<img src="img/logo2.png">
 	<p>A<span>M</span>B<span>L</span></p>
 	<h3>Just Keep Rambling!</h3>
-</nav>
-</div>
-
-<div class="fullPost">
-<input type="text" placeholder="Subject" class="addPostInput">
-<div class="spacer"></div>
-<textarea type="text" placeholder="Something to Rambl about?" class="addPostInput"></textarea>
-<button class="addPostButton">Post</button>
-</div> -->
-
-<!-- class="w-100 position-fixed fixed-top overflow-hidde m-0" -->
-
-<!-- ROAST FORM -->
-<div class="jumbotron jumbotron-fluid">
-<div id="roastForm" class="container">
-<div class="row">
-	<div class="" id="imageContainer">
-		<img class="" src="img/photos/3.jpg">
+	</nav>
 	</div>
-	<div class="">
-		<div class="" id="pageHeader">
-			<h1 class="display-4 animated bounceIn">ROAST ME! </h1>
-			<p class="lead animated fadeInUp">Hello Cruel World! Gimme yer bes'shawt!! XD</p>
-		</div>
-		<hr class="my-4">
-		<p>We all enjoy a good laugh. Go ahead, post the funniest thing you can come up with. It's all in good nature.</p>
+
+	<div class="fullPost">
+	<input type="text" placeholder="Subject" class="addPostInput">
+	<div class="spacer"></div>
+	<textarea type="text" placeholder="Something to Rambl about?" class="addPostInput"></textarea>
+	<button class="addPostButton">Post</button>
+	</div> -->
+
+<div id="space"></div>
+
+<!-- ROAST FORM -- USING BOOTSTRAP -->
+<div class="col-10 offset-1">
+	<div class="jumbotron jumbotron-fluid">
+		<div id="roastForm" class="container">
+			<div class="row">
+	<!-- IMAGE CAROSEL -- CAN PROBABLY ADD TO IMAGE-->
+				<div id="carouselExampleInterval" class="carousel slide col-6" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-interval="2000">
+							<img src="assets/img/photos/1.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item" data-interval="2000">
+							<img src="assets/img/photos/2.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div  class="carousel-item" data-interval="2000">
+							<img src="assets/img/photos/3.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item" data-interval="2000">
+							<img src="assets/img/photos/4.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item" data-interval="2000">
+							<img src="assets/img/photos/5.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>	
+					<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
 
 
-		<form id="todoForm">
-<!-- USERNAME AND ANONYMOUS BUTTON			 -->
-			<div class="form-group">
-				<!-- <input id="username" class="form-control" placeholder="username"> -->
-				<!-- <label for="inputUsername">Username</label> -->
-				<input id="inputUsername" class="form-control" placeholder="Username">
+
+				<!-- <div class="" id="imageContainer">
+					<img class="" src="assets/img/photos/3.jpg">
+				</div> -->
+
+
+	<!-- PAGE HEADER -->
+				<div class="col-6" id="pageHeader">
+					<div class="">
+						<h1 class="display-4 animated bounceIn">ROAST ME! </h1>
+						<p class="lead animated fadeInUp">Hello Cruel World! Gimme yer bes'shawt!! XD</p>
+						<hr class="my-4">
+						<p>We all enjoy a good laugh. Go ahead, post the funniest thing you can come up with. It's all in good nature.</p>
+					</div>
+				</div>
+						
+
+	<!-- ROAST FORM -->
+					<form id="todoForm" class="col-8 offset-2 mt-5">
+		<!-- ROAST TEXT INPUT -->
+						<div class="form-group">
+							<label for="inputRoast">Comment</label>
+							<textarea id="inputRoast" class="form-control" rows="5" cols="30" placeholder="gimme your best roast!"></textarea>
+						</div>
+		<!-- USERNAME AND ANONYMOUS BUTTON -->
+						<div class="form-group">
+							<label for="inputUsername">Username</label>
+							<input id="inputUsername" class="form-control" placeholder="Username">
+						</div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label id="remainAnon" class="form-check-label text-muted " for="exampleCheck1">
+								<small>Check here to remain anonymous</small>
+							</label>
+						</div>
+	<!-- FORM SUBMIT BUTTON -->
+						<div class="form-group">
+							<button type="button" id="submitBtn" onclick="postComment()" class="btn btn-outline-warning btn-lg">Submit</button>
+						</div>
+					</form>
 			</div>
-			<div class="form-group form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<!-- <label class="form-check-label" for="exampleCheck1">Check here to remain anonymous</label> -->
-				  <small id="remainAnon" class="form-text text-muted">Check here to remain anonymous</small>
-			  </div>
-<!-- ROAST TEXT INPUT			 -->
-			<div class="form-group">
-				<!-- <textarea id="comment" class="form-control" placeholder="comment"></textarea> -->
-				<textarea id="inputRoast" class="form-control" rows="5" cols="30" placeholder="gimme your best roast!"></textarea>
-				<!-- <label for="inputRoast">Roast</label> -->
-			</div>
-<!-- FORM SUBMIT BUTTON -->
-			<div class="form-group">
-				<button type="button" id="submitBtn" onclick="postComment()" class="btn btn-outline-warning btn-lg">Submit</button>
-			</div>
-		</form>
 		</div>
 	</div>
 </div>
-</div>
 
+
+
+<!-- ROAST USERNAME AND COMMENTS -->
 	<div>			
 		<hr id="hrDivider" class="m-3">
-<!-- ROAST USERNAME AND COMMENTS -->
 		<ul id="commentList" class="list-group m-3">
 		</ul>
 	</div>
 
 
 
+<!-- newsletter sign up -->
+	<!-- <section id="newsletter" class="bg-secondary">
+		<div class="container text-white text-center py-5">
+			<p class="lead">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</p>
+			<div class="row justify-content-center">
+				<div class="col-10 col-sm-8 col-md-6 col-lg-4">
+					<form action="" class="form-inline">
+						<div class="input-group">
+							<input type="text" placeholder="Your Email" id="" class="form-control">
+							<div class="input-group-append">
+								<button class="btn btn-primary">Join Now</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section> -->
 
-<!-- JUMBORTRON DISPLAY AND COMMENT FORM -->
-<!-- 	<div class="jumbotron">
-
-	<div class="" id="pageHeader">
-		<h1 class="display-4">ROAST ME! </h1>
-		<p class="lead">Hello Cruel World! Gimme yer bes'shawt!! XD</p>
-	</div>
-
-
-
-  <hr class="my-4">
-  <p>We all enjoy a good laugh. Go ahead, post the funniest thing you can come up with. It's all in good nature.</p>
-
- 
-
-
-</div> -->
-
-
-
-<!-- form-control-lg -->
-
+<!-- FOOTER	 -->
+	<section id="footer" class="bg-dark p-2 mt-5">
+		<ul class="nav text-center justify-content-center flex-column flex-sm-row">
+			<li class="nav-item">
+				<a href="#" class="nav-link text-white">ROAST</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link text-white">WEB</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link text-white">FB</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link text-white">IG</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link text-white" data-toggle="modal" data-target="#bookingModal">SHARE</a>
+			</li>
+		</ul>
+	</section>
 
 
 
@@ -264,10 +332,10 @@
 	<!-- Bootstrap script -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<!-- Vue JS CDN script -->
-		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 	<!-- Vue Router CDN script -->
-		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+		<!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
 	<!-- custom JS script -->
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
 	</body>
 </html>
