@@ -1,3 +1,10 @@
+/* TO DO */
+/* FINALIZE STYLE  */
+/* CLEAN UP CODE  */
+/* MOBILE FIRST REDISING */
+/* MEDIA QUERIES, TEST */
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
@@ -28,13 +35,6 @@ body {
 }
 
 main {
-    /* min-height: calc(100vh - 3.5rem - 8rem); */
-    /* margin-top: 3.5rem; */
-    /* grid-row: 2 / 3; */
-    /* grid-area: main; */
-}
-
-main {
     grid-area: main;
 }
 
@@ -50,12 +50,6 @@ main {
     align-items: center;
     justify-content: space-between;
 }
-
-/* delete this?? */
-/* .main-header > div {
-    display: inline-block;
-    vertical-align: middle;
-} */
 
 .toggle-button {
     width: 3rem;
@@ -539,3 +533,19 @@ img:hover {
         transform: rotateZ(10deg);
       }
   }
+
+
+
+
+
+main {
+    /* min-height: calc(100vh - 3.5rem - 8rem); */
+    /* margin-top: 3.5rem; */
+    /* grid-row: 2 / 3; */
+    /* grid-area: main; */
+}
+/* delete this?? */
+/* .main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+} */
