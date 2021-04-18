@@ -333,18 +333,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* COMMENT APP VERSION STYLING */
     #roastForm {
 
@@ -400,17 +388,6 @@ img:hover {
 
 /* #ffc107; */
 /* #343a40 */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -533,19 +510,3 @@ img:hover {
         transform: rotateZ(10deg);
       }
   }
-
-
-
-
-
-main {
-    /* min-height: calc(100vh - 3.5rem - 8rem); */
-    /* margin-top: 3.5rem; */
-    /* grid-row: 2 / 3; */
-    /* grid-area: main; */
-}
-/* delete this?? */
-/* .main-header > div {
-    display: inline-block;
-    vertical-align: middle;
-} */
