@@ -1,88 +1,4 @@
 console.log("connected");
-//AGE CHECK
-// var userAge = prompt("How old are you?");
-
-// if(userAge >= 21) {
-// 	console.log("Welcome, you may enter. Drink responsibly!");
-// }
-// else if(userAge == 21) {
-// 	console.log("Congratulations on turning 21! You may enter and drink responsibly");
-// }
-// else if(userAge >= 18) {
-// 	console.log("Welcome, you may enter but you can NOT drink!");
-// }
-// else if(userAge == 18) {
-// 	console.log("Congratulations on turning 18! You may enter, but you can NOT drink!");
-// }
-// else {
-// 	console.log("You shall NOT pass!");
-// }
-
-
-//checks offby clicking on todo item
-// $("ul").on("click", "li", function(){
-//     $(this).toggleClass("completed");
-// });
-
-
-//click on X to delete ToODoO
-// $('ul').on("click", "span", function(event) {
-//     $(this).parent().fadeOut(500, function(){
-//         $(this).remove();
-//     });
-//     event.stopPropagation();
-// });
-
-
-//add new to do
-// $('input[type="text"]').keypress(function(event){
-//     if(event.which === 13) {
-//         //grabbing new to do text from input
-//         var todoText = $(this).val();
-//         $(this).val("");
-//         //created new li and add to ul
-//         $('ul').append('<li><span><i class="fa fa-trash"></i></span> ' + todoText + ' </li>')
-//     }
-// })
-
-//to hide/show input form
-// $('.fa-plus').click(function() {
-//     $('input[type="text"]').fadeToggle();
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // GLOBAL VARIABLES
 
 // ALLOWS FOR ENTER KEY TO TRIGGER BUTTON
@@ -204,8 +120,6 @@ addPostButton.addEventListener('click', function() {
 
 
 
-
-
 //uHost scripts
 
 // var backdrop = document.querySelector('.backdrop');
@@ -278,15 +192,52 @@ ctaButton.addEventListener('animationiteration', function(event) {
 
 
 
+//AGE CHECK
+// var userAge = prompt("How old are you?");
+// if(userAge >= 21) {
+// 	console.log("Welcome, you may enter. Drink responsibly!");
+// }
+// else if(userAge == 21) {
+// 	console.log("Congratulations on turning 21! You may enter and drink responsibly");
+// }
+// else if(userAge >= 18) {
+// 	console.log("Welcome, you may enter but you can NOT drink!");
+// }
+// else if(userAge == 18) {
+// 	console.log("Congratulations on turning 18! You may enter, but you can NOT drink!");
+// }
+// else {
+// 	console.log("You shall NOT pass!");
+// }
 
 
+//checks offby clicking on todo item
+// $("ul").on("click", "li", function(){
+//     $(this).toggleClass("completed");
+// });
 
 
+//click on X to delete ToODoO
+// $('ul').on("click", "span", function(event) {
+//     $(this).parent().fadeOut(500, function(){
+//         $(this).remove();
+//     });
+//     event.stopPropagation();
+// });
 
 
+//add new to do
+// $('input[type="text"]').keypress(function(event){
+//     if(event.which === 13) {
+//         //grabbing new to do text from input
+//         var todoText = $(this).val();
+//         $(this).val("");
+//         //created new li and add to ul
+//         $('ul').append('<li><span><i class="fa fa-trash"></i></span> ' + todoText + ' </li>')
+//     }
+// })
 
-
-
-
-
-
+//to hide/show input form
+// $('.fa-plus').click(function() {
+//     $('input[type="text"]').fadeToggle();
+// });
