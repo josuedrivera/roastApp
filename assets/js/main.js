@@ -1,6 +1,9 @@
 console.log("connected");
 // GLOBAL VARIABLES
 
+
+
+
 // ALLOWS FOR ENTER KEY TO TRIGGER BUTTON
 var input = document.getElementById("inputRoast");
 input.addEventListener('keypress', function enterKey(e) {
@@ -119,7 +122,6 @@ addPostButton.addEventListener('click', function() {
 
 
 
-
 //uHost scripts
 
 // var backdrop = document.querySelector('.backdrop');
@@ -185,11 +187,6 @@ ctaButton.addEventListener('animationend', function(event) {
 ctaButton.addEventListener('animationiteration', function(event) {
     console.log('Animation Iteration', event);
 })
-
-
-
-
-
 
 
 //AGE CHECK
